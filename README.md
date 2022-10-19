@@ -4,7 +4,7 @@
 
 We are sorry to first darw reviewers attention to clarify a typo in the submission that may lead to misunderstanding.
 
-On page, page 7 first paragraph (S_a 3), the last sentence: "Thus, S_c receives no penalty ..." This should be `S_a`, there is no S_c.
+On page 7, the last sentence of the first paragraph (S_a <3>): "Thus, S_c receives no penalty ..." This should be `S_a`, there is no S_c.
 
 ## About PrestigeBFT
 
