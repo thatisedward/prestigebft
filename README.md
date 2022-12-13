@@ -1,12 +1,7 @@
-<h1 align="center"> Prestige BFT: Making Decentralization Efficient in Distributed Ledgers using Reputation-based Byzantine Fault-Tolerant Consensus Algorithms  </h1>
+<h1 align="center"> Vintage BFT: Making View Changes Efficient for Byzantine Fault-Tolerant
+Consensus Algorithms using Reputation Mechanisms  </h1>
 
-## About Sigmod submission!
-
-We are sorry to first draw reviewers' attention to clarify a typo in the submission that may lead to misunderstanding.
-
-On page 7, the last sentence of the first paragraph (S_a <3>): "Thus, S_c receives no penalty ..." This should be `S_a`, there is no S_c.
-
-## About PrestigeBFT
+## About Vintage BFT
 
 PrestigeBFT is a reputation-based BFT consensus algorithm that enables active view changes in BFT algorithms. Under the BFT model, we cannot pass an absolute judgment on server correctness (e.g., we never know if a server deliberately drops a message or if the message is dropped by the network). Instead, **PrestigeBFT extends the traditional state machine replication (SMR) properties and establishes a reputation state to describe a server's likelihood of being correct or faulty.** Furthermore, PrestigeBFT develops a reputation engine that precisely translates server behavior history into a reputation penalty. A server's reputation penalty determines the difficulty of the server becoming a future leader via a Proof-of-Work-like computation phase. As such, more correct servers are more likely to become future leaders as they perform less computation than faulty servers. Equipped with the reputation engine, **PrestigeBFT enables active view changes where servers can proactively campaign for leadership for themselves.** Compared with PBFT-like BFT algorithms (e.g., Zyzzyva, SBFT, and HotStuff), 1) under benign failures (e.g., crash failures), PrestigeBFT does not blindly follow a pre-defined leadership schedule and thus prevents the system from having crashed servers as a leader; 2) under Byzantine failures, PrestigeBFT gradually imposes increasing computational work on faulty servers and thus suppresses Byzantine servers from becoming leaders over time.
 
